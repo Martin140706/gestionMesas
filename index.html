@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión de mesas</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🍽️ Gestión de mesas RESTAURANTE</h1>
+        <div class="estadistica">
+          <div class="estadisticaItem">
+            <div class="estadisticaNumero" id="disponibles">0</div>
+            <div class="estadisticaLabel">Disponibles</div>
+          </div>
+          <div class="estadisticaItem">
+            <div class="estadisticaNumero" id="ocupadas">0</div>
+            <div class="estadisticaLabel">Ocupadas</div>
+          </div>
+          <div class="estadisticaItem">
+            <div class="estadisticaNumero" id="reservadas">0</div>
+            <div class="estadisticaLabel">Reservadas</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="senial">
+        <div class="senialItem">
+          <div class="senialColor" style="background: #10b981"></div>
+          <span>Disponible</span>
+        </div>
+        <div class="senialItem">
+          <div class="senialColor" style="background: #ef4444"></div>
+          <span>Ocupada</span>
+        </div>
+        <div class="senialItem">
+          <div class="senialColor" style="background: #f59e0b"></div>
+          <span>Reservada</span>
+        </div>
+      </div>
+
+      <div class="gridMesas" id="tablesGrid"></div>
+    </div>
+
+    <div class="modal" id="modal">
+      <div class="contenidoModal">
+        <div class="headerModal">
+          <h2 id="tituloModal">Mesa #1</h2>
+        </div>
+        <div id="contenidoDinamico"></div>
+        <div class="botonModal" id="botonModal"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
