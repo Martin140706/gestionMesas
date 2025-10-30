@@ -148,8 +148,8 @@ function abrirModal(mesa) {
         pedidoItem.className = 'itemPedido';
         pedidoItem.innerHTML = `
                             <span class="itemPedidoNombre">${item.nombre}</span>
-                            <div>
-                                <span class="itemPedidoPrecio">$${item.precio.toFixed(
+                            <div class="itemPedidoAcciones">
+                                <span class="itemPedidoPrecio">${item.precio.toFixed(
                                   2,
                                 )}</span>
                                 <button class="btnEliminar" onclick="eliminarComida(${index})">✕</button>

@@ -269,7 +269,6 @@ body {
   padding: 15px;
   margin-bottom: 15px;
   max-height: 200px;
-  min-width: none;
   overflow-y: auto;
 }
 
@@ -286,6 +285,7 @@ body {
   align-items: center;
   padding: 10px;
   border-bottom: 1px solid #e5e7eb;
+  gap: 10px;
 }
 
 .itemPedido:last-child {
@@ -295,22 +295,33 @@ body {
 .itemPedidoNombre {
   font-weight: 500;
   color: #333;
+  flex: 1;
+  word-break: break-word;
+}
+
+.itemPedidoAcciones {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
 .itemPedidoPrecio {
   font-weight: bold;
   color: #10b981;
+  white-space: nowrap;
 }
 
 .btnEliminar {
   background: #ef4444;
   color: white;
   border: none;
-  padding: 4px 8px;
+  padding: 6px 10px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 12px;
-  margin-left: 10px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .btnEliminar:hover {
